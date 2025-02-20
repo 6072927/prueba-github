@@ -139,7 +139,7 @@ nav > ul {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  width: 200px;
+  width: 100px;
   margin-bottom: 50px;
 }
 
@@ -151,7 +151,7 @@ nav > ul {
   width: 80px; /* Ajusta el tamaño del contenedor del icono */
   height: 80px;
   color: darkorange;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   margin-right: 110px;
   margin-left: 110px;
 }
