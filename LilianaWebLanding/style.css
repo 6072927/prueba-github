@@ -133,6 +133,15 @@ nav > ul {
   align-items: center;
   margin-top: 50px;
 }
+.peque{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 200px;
+  margin-bottom: 50px;
+}
 
 #features .icon {
   display: flex;
@@ -142,10 +151,11 @@ nav > ul {
   width: 80px; /* Ajusta el tamaño del contenedor del icono */
   height: 80px;
   color: darkorange;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   margin-right: 110px;
   margin-left: 110px;
 }
+
 
 
 
