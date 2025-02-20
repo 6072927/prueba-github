@@ -1,0 +1,341 @@
+/** global element styling **/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+  
+}
+
+#page-wrapper {
+  position: relative;
+
+
+  display: flex;
+  flex-direction: column;  /* Coloca las secciones en columna */
+  align-items: center;     /* Centra los elementos */
+  justify-content: flex-start;
+}
+
+li {
+  /*
+  ...cambia aquí...
+  */
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  /*
+  ...cambia aquí...
+  */
+}
+
+.grid {
+  display: flex;
+  flex-direction: row; /* Los elementos se alinean en una fila */
+  align-items: center; /* Centra los elementos verticalmente en la misma fila */
+  margin-bottom: 30px; /* Separación entre las filas */
+  width: 100%; /* Ajusta el ancho para evitar que los elementos se estiren demasiado */
+  justify-content: center; /* Centra todo el contenido de la fila */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 200px;
+  /*
+  ...cambia aquí...
+  */
+  margin-left: 20px;
+}
+
+
+nav {
+  /*
+  ...cambia aquí...
+  */
+
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#hero > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  /*
+  ...cambia aquí...
+  */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos del formulario en una columna */
+  align-items: center; /* Centra horizontalmente los elementos del formulario */
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#hero input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos dentro del contenedor */
+  margin-top: 50px;
+}
+
+#features .icon {
+  display: flex;
+  /*
+  ...cambia aquí...
+  */
+  width: 20vw;
+  color: darkorange;
+}
+
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*
+  ...cambia aquí...
+  */
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  /*
+  ...cambia aquí...
+  */
+  justify-content: space-between; /* Asegura que los productos se distribuyan uniformemente */
+  gap: 20px; 
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  
+  /*
+  ...cambia aquí...
+  */
+  width: calc(33.33% - 20px); /* Tres productos en una fila, con un pequeño margen entre ellos */
+  border: 1px solid black; /* Borde negro alrededor de cada producto */
+  padding: 0px; /* Añade algo de espacio dentro de cada producto */
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: rgb(14, 14, 15);
+  padding: 15px 0;
+  width: 100%;
+  /*
+  ...cambia aquí...
+  */
+  font-weight: 700;
+  
+  text-align: center;
+  border: 1 px solid black;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product > h2 {
+  margin-top: 12px;
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; 
+}
+
+.product > ul {
+  margin: 15px 0;
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; 
+}
+
+.product > ul > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 130px 10px 130px;
+  background-color: #f1c40f;
+  font-weight: 400;
+  padding: 5px 15px;
+  font-size: 0.9em; 
+  width: auto;
+  text-align: center;
+
+
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+  
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  justify-content: flex-end;
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  justify-content: flex-end; /* Alinea todo el contenido a la derecha */
+  
+  flex-direction: column;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none; /* Elimina los puntos de la lista */
+  text-align: right; /* Alinea el texto a la derecha */
+  padding: 0;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #444;
+  text-align: right; /* Asegura que el texto en el <span> se alinee a la derecha */
+  margin-left: 20px; /* Espacio entre la lista y el texto del copyright */
+}
+
+
+
+
+
+/* ESTO ES LO QUE YO HE AÑADIDO */
+
+
+
+.icon {
+  display: flex;
+  justify-content: center; /* Centra la imagen dentro de su contenedor */
+  margin-right: 5px; /* Espacio entre la imagen y la descripción */
+}
+
+.icon img {
+  max-width: 100px; /* Tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el texto a la izquierda */
+}
+
+.desc h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.desc p {
+  font-size: 1em;
+  max-width: 700px; /* Asegura que el párrafo no se estire demasiado */
+  margin: 0 auto; /* Centra el párrafo */
+}
+
+
+
+
+
+
+
+
+#features .grid {
+  width: 140%; /* Ajusta el ancho de las grid para que ocupe más espacio */
+  max-width: none; /* Permite que se estire hasta el 90% del contenedor sin restricciones */
+}
