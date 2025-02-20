@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comandos Linux</title>
+
+	<!-- Estilos de Reveal.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+
+	<!-- Estilos para resaltar código con Highlight.js -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+
+	<style>
+		/* Mejora el estilo de los bloques de código */
+		pre {
+			background: #4b4a4a !important;
+			padding: 15px;
+			border-radius: 8px;
+			font-size: 1.1em;
+			overflow-x: auto;
+		}cl
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Imagen de portada -->
+			<section>
+				<h2>Comandos LINUX</h2>
+				<img src="portada.png" alt="Comandos Linux" style="max-width: 50%; height: auto;">
+			</section>
+
+			<section>
+				<h2>¿Que es un Comando?</h2>
+				<pre><code>Es un programa o utilidad que se ejecuta en la CLI, es
+una forma de interactuar con un programa de computadora o
+sistema operativo mediante la introducción de instrucciones, 
+textos y procesos. Puedes ejecutar comandos para realizar  
+diversas tareas, desde la instalación de paquetes hasta la 
+gestión de usuarios y la manipulación de archivos.</code></pre>
+			</section>
+
+			<section>
+				<!-- Ejemplo de un comando en Linux -->
+				<h2>Ejemplo de un comando</h2>
+				<img src="image.png" alt="Ejemplo de comando Linux" style="width: 70%; border-radius: 5px;">
+
+			</section>
+
+			<section data-transition="zoom">
+				<h2>1. Comandos de navegación</h2>
+				<pre><code class="bash">pwd # Muestra la ruta actual</code></pre>
+				<pre><code class="bash">ls # Lista los archivos en el directorio</code></pre>
+				<pre><code class="bash">cd nombre_carpeta # Cambia de directorio</code></pre>
+			</section>
+
+			<section data-transition="slide">
+				<h2>2. Comandos de archivos</h2>
+				<pre><code class="bash">touch archivo.txt # Crea un archivo vacío</code></pre>
+				<pre><code class="bash">rm archivo.txt # Borra un archivo</code></pre>
+				<pre><code class="bash">mv origen destino # Mueve o renombra un archivo</code></pre>
+				<pre><code class="bash">cp origen destino # Copia un archivo</code></pre>
+			</section>
+
+			<section data-transition="fade">
+				<h2>3. Permisos y usuarios</h2>
+				<pre><code class="bash">chmod 755 archivo # Cambia permisos</code></pre>
+				<pre><code class="bash">chown usuario archivo # Cambia dueño</code></pre>
+				<pre><code class="bash">sudo comando # Ejecuta como administrador</code></pre>
+			</section>
+
+			<section data-transition="concave">
+				<h2>4. Administración de procesos</h2>
+				<pre><code class="bash">ps aux # Muestra procesos activos</code></pre>
+				<pre><code class="bash">kill PID # Mata un proceso por ID</code></pre>
+				<pre><code class="bash">top # Muestra consumo de recursos</code></pre>
+			</section>
+
+			<section data-transition="zoom">
+				<h2>5. Administración de paquetes</h2>
+				<pre><code class="bash">sudo apt update # Actualiza lista de paquetes</code></pre>
+				<pre><code class="bash">sudo apt upgrade # Actualiza los paquetes</code></pre>
+				<pre><code class="bash">sudo apt install paquete # Instala un paquete</code></pre>
+				<pre><code class="bash">sudo apt remove paquete # Desinstala un paquete</code></pre>
+			</section>
+
+			<section data-transition="slide">
+				<h2>6. Comandos de red</h2>
+				<pre><code class="bash">ping google.com # Verifica conexión</code></pre>
+				<pre><code class="bash">ifconfig # Muestra configuración de red</code></pre>
+				<pre><code class="bash">netstat -tulnp # Muestra puertos abiertos</code></pre>
+			</section>
+			
+			<!-- Enlace al PDF -->
+			<section>
+				<h2>Guía Completa de Comandos</h2>
+				<p>PDF con una guía de comandos de Linux</p>
+				<a href="Linux-Commands-Cheatsheet-ES.pdf" target="_blank" class="button">Ver Guía PDF</a>
+			</section>
+
+			<!-- Pantalla de índice -->
+			<section>
+				<h3>Comandos Básicos de Linux</h3>
+				<ul>
+					<li><a href="#/2">¿Que es un Comando?</a></li>
+					<li><a href="#/3">Ejemplo de un Comando?</a></li>
+					<li><a href="#/4">Comandos de navegación</a></li>
+					<li><a href="#/5">Comandos de archivos</a></li>
+					<li><a href="#/6">Permisos y usuarios</a></li>
+					<li><a href="#/7">Administración de procesos</a></li>
+					<li><a href="#/8">Administración de paquetes</a></li>
+					<li><a href="#/9">Comandos de red</a></li>
+					<li><a href="#/10">Conclusión</a></li>
+				</ul>
+			</section>
+
+			<section data-transition="fade">
+				<h2>Gracias!!</h2>
+				<p>Espero que esta presentación te haya sido de utilidad.</p>
+			</section>
+		</div>
+	</div>
+
+	<!-- Scripts de Reveal.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+	<script>
+		Reveal.initialize({
+			transition: 'slide',
+			backgroundTransition: 'zoom',
+			slideNumber: true,
+			controls: true,
+			progress: true,
+			hash: true,
+			plugins: []
+		});
+		hljs.highlightAll();
+	</script>
+
+</body>
+
+</html>
